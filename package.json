@@ -1,0 +1,23 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0",
+    "mongodb": "^5.8.1",
+    "mongoose": "^7.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
