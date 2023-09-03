@@ -1,4 +1,5 @@
 const Koa = require('koa')
+const cors = require('@koa/cors')
 const Router = require('koa-router')
 const Logger = require('koa-logger')
 const bodyParser = require('koa-bodyparser')
@@ -8,6 +9,7 @@ const putUser = require('./controllers/putUserController')
 const getAllUsers = require('./controllers/getUserContoller')
 
 const app = new Koa()
+app.use(cors())
 const router = new Router()
 
 app.use(bodyParser())
